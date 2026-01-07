@@ -10,7 +10,7 @@
 
     <nav class="bg-white shadow-sm py-4 px-6">
         <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="font-bold text-xl text-blue-900">IntelliWiz Technologies</a>
+            <a href="#" class="font-bold text-xl text-blue-900">IntelliWiz Technologies</a>
             <a href="index.html" class="text-blue-600 hover:underline">Back to Home</a>
         </div>
     </nav>
@@ -35,13 +35,38 @@
         </section>
 
         <section class="mb-8">
-            <h2 class="text-xl font-semibold mb-3">3. Permissions</h2>
-            <p class="mb-4">To provide our core service, the app may request the following permissions:</p>
-            <ul class="list-disc pl-6 space-y-2">
-                <li><strong>Local Network:</strong> Necessary for the "Party" feature to detect other phones nearby.</li>
-                <li><strong>Media & Apple Music:</strong> Necessary to access and play MP3 files stored on your device.</li>
-                <li><strong>Bluetooth:</strong> Used as an alternative discovery method for nearby syncing.</li>
-            </ul>
+            <h2 class="text-xl font-semibold mb-3">3. Device Permissions and Local Connectivity</h2>
+            <p class="mb-4">To provide the core functionality of synchronized music playback, "Sync Party" requires access to specific hardware features on your iOS device. We are committed to protecting your privacy and ensuring transparency regarding these permissions.</p>
+            
+            <div class="mb-6">
+                <h3 class="font-bold text-lg text-blue-900 mb-2">3.1 Local Network Access</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Purpose:</strong> The App uses Apple's Multipeer Connectivity framework to discover other devices running "Sync Party" nearby.</li>
+                    <li><strong>Usage:</strong> This permission is strictly used to identify valid Host or Guest devices to establish a connection session.</li>
+                    <li><strong>Data Handling:</strong> No data regarding your local network structure, other devices, or internet traffic is collected, stored, or transmitted to external servers.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="font-bold text-lg text-blue-900 mb-2">3.2 Wi-Fi and Bluetooth</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Purpose:</strong> These radio technologies are used to establish a direct, peer-to-peer connection between devices.</li>
+                    <li><strong>Usage:</strong>
+                        <ul class="list-circle pl-6 mt-1 space-y-1 text-gray-700">
+                            <li><em>Bluetooth:</em> Used to broadcast and scan for nearby sessions with low power consumption.</li>
+                            <li><em>Wi-Fi:</em> Used to transfer audio files and synchronization commands between connected devices with high speed and low latency.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Location Data:</strong> While these technologies can technically be used for location estimation, <strong>Sync Party does not access, track, or store your geographic location.</strong> The use of Wi-Fi and Bluetooth is limited exclusively to local data transfer.</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h3 class="font-bold text-lg text-blue-900 mb-2">3.3 Data Persistence</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Audio Files:</strong> Audio files shared during a session are stored in a temporary directory on the Guest device. These files are <strong>automatically deleted</strong> when the user disconnects or leaves the session. They are not added to the user's permanent music library or backed up to any cloud service.</li>
+                </ul>
+            </div>
         </section>
 
         <section class="mb-8">
@@ -57,7 +82,7 @@
         <section class="mb-8 border-t pt-6">
             <h2 class="text-xl font-semibold mb-3">6. Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p class="mt-2 font-medium text-blue-700 underline">support@yourdomain.com</p>
+            <p class="mt-2 font-medium text-blue-700 underline">support@intelliwiztech.com</p>
         </section>
     </main>
 
